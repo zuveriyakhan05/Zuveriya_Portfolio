@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index element={<Home />}/>
-          <Route pat="*" element={<NotFound />}/>
+          <Route path="*" element={<NotFound />}/>
         </Routes>
       </BrowserRouter>
     </>

@@ -9,7 +9,7 @@ const projects = [
      image: "/projects/Portfolio.png",
      tags: ["React", "Tailwind CSS"],
      demoUrl: "#",
-     githubUrl: "#",
+     githubUrl: "https://github.com/zuveriyakhan05/Zuveriya_Portfolio.git",
     },
 
     {
