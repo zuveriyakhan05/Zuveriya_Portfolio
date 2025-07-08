@@ -31,7 +31,7 @@ useEffect(() => {
 
   return (
     <button onClick={toggleTheme} className={cn(
-        "fixed max-sm:hidden top-5 right-5 z-50 p-2 rounded-full transiton-colors duration-300",
+        "fixed bottom-205 right-8 z-50 p-2 rounded-full transiton-colors duration-300",
         "focus:outline-hidden"
     )}
     >

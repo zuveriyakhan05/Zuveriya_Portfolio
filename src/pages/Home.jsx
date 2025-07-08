@@ -19,6 +19,7 @@ export const Home = () => {
 
       {/* Navbar */}
       <Navbar />
+      <ThemeToggle />
 
       {/* Main Content */}
       <main>
