@@ -30,10 +30,8 @@ useEffect(() => {
   }
 
   return (
-    <button onClick={toggleTheme} className={cn(
-        "fixed bottom-205 right-8 z-50 p-2 rounded-full transiton-colors duration-300",
-        "focus:outline-hidden"
-    )}
+    <button onClick={toggleTheme} 
+    // className={cn("fixed top-5 left-76 z-50 p-2 rounded-full transiton-colors duration-300","focus:outline-hidden")}
     >
 
       {isDarkMode ? (<Sun className="h-6 w-6 text-yellow-300"/>
