@@ -14,10 +14,10 @@ const projects = [
 
     {
      id: 2,
-     title: "Frontend Project",
-     description: "Comming Soon",
+     title: "Designer Portfolio",
+     description: "This portfolio showcases some of my Next.js and Tailwind Css Skills.",
      image: "/projects/Frontend.png",
-     tags: ["React", "Tailwind CSS"],
+     tags: ["Next.js", "Tailwind CSS"],
      demoUrl: "#",
      githubUrl: "#",
     },
