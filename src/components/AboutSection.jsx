@@ -24,7 +24,7 @@ export const AboutSection = () => {
                         <h3 className="text-2xl font-semibold">Turning Vision into Virtual Reality</h3>
 
                         <p className="text-muted-foreground">
-                            I’m a passionate Full-Stack Developer 🧑‍💻 and UI/UX Designer 🎨 currently pursuing
+                            I’m a passionate 🎨 UI/UX Designer, Data Analyst 📊 and Full-Stack Developer 🧑‍💻 currently pursuing
                             a B.Tech in Computer Science Engineering at Rai University 🎓.
                             I merge intuitive design with powerful development to craft digital experiences
                             that are both user-friendly and high-performing.
