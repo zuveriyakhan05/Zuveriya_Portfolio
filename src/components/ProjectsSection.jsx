@@ -1,4 +1,5 @@
 import { ExternalLink, Github, ArrowRight } from "lucide-react";
+import { LuFigma } from "react-icons/lu";
 
 
 const projects = [
@@ -8,29 +9,65 @@ const projects = [
      description: "This portfolio showcases some of my work—each project a story of problem-solving, collaboration, and growth. Whether you're here to explore, collaborate, or get inspired, I'm glad you're visiting.",
      image: "/projects/Portfolio.png",
      tags: ["React", "Tailwind CSS"],
-     demoUrl: "#",
+     demoUrl: "https://zuveriyakhan.netlify.app/",
      githubUrl: "https://github.com/zuveriyakhan05/Zuveriya_Portfolio.git",
     },
 
-    {
+     {
      id: 2,
-     title: "Designer Portfolio",
-     description: "This portfolio showcases some of my Next.js and Tailwind Css Skills.",
-     image: "/projects/Frontend.png",
-     tags: ["Next.js", "Tailwind CSS"],
-     demoUrl: "#",
-     githubUrl: "#",
+     title: "Weather Dashboard",
+     description: "An interactive Power BI dashboard that analyzes historical weather data, uncovering trends and correlations between temperature, humidity, wind speed, and visibility using Power Query and DAX.",
+     image: "/projects/Weather.png",
+     tags: ["Power BI"],
+     githubUrl: "https://github.com/zuveriyakhan05/Weather_Dashboard.git",
     },
 
-     {
+    {
      id: 3,
-     title: "AI-ML Project",
-     description: "Comming Soon",
-     image: "/projects/AI-ML.png",
-     tags: ["React", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Python"],
-     demoUrl: "#",
-     githubUrl: "#",
+     title: "Adidas Dashboard",
+     description: "An interactive Adidas sales dashboard built in Excel, visualizing regional performance, product categories, sales trends, and profit insights through dynamic charts and filters.",
+     image: "/projects/Adidas.png",
+     tags: ["Microsoft Excel"],
+     githubUrl: "https://github.com/zuveriyakhan05/Adidas_Dashboard.git",
     },
+
+    {
+     id: 4,
+     title: "Sales Store Dashboard",
+     description: "An interactive sales store dashboard built in Excel, showcasing order trends, customer demographics, channel performance, and regional insights through dynamic filters and visualizations.",
+     image: "/projects/Sales Store.png",
+     tags: ["Microsoft Excel"],
+     githubUrl: "https://github.com/zuveriyakhan05/Sales_Store_Dashboard.git",
+    },
+
+    {
+     id: 5,
+     title: "Business Analytics (sales/performance) Dashboard",
+     description: "A modern, data-driven analytics dashboard UI designed in Figma, featuring clean visuals, KPI cards, and interactive charts for tracking business performance and insights.",
+     image: "/projects/Sales.png",
+     tags: ["Figma"],
+     figmaUrl: "https://www.figma.com/proto/TLwuAbBQYWLs0pRVhUFRUX/App-Designing?node-id=550-846&viewport=40%2C104%2C0.15&t=r548qqPAOh8GL4YM-1&scaling=min-zoom&content-scaling=fixed&page-id=550%3A845",
+    },
+
+    {
+     id: 6,
+     title: "Modern Admin Analytics Dashboard",
+     description: "A clean and interactive admin dashboard UI designed in Figma, visualizing key metrics like users, server activity, and financial insights with intuitive charts and controls.",
+     image: "/projects/Dataviz ui.png",
+     tags: ["Figma"],
+     figmaUrl: "https://www.figma.com/proto/TLwuAbBQYWLs0pRVhUFRUX/App-Designing?node-id=550-1286&viewport=-226%2C242%2C0.24&t=aISJlZ41KI04Ns36-1&scaling=min-zoom&content-scaling=fixed&page-id=550%3A845",
+    },
+
+    {
+     id: 7,
+     title: "StayHub Interface",
+     description: "A streamlined property management suite designed to balance real-time booking analytics with effortless staff scheduling.",
+     image: "/projects/StayHub.png",
+     tags: ["Figma"],
+     figmaUrl: "https://www.figma.com/proto/TLwuAbBQYWLs0pRVhUFRUX/App-Designing?node-id=550-1466&viewport=-515%2C-289%2C0.27&t=4rkaAvTS4VXgbiSJ-1&scaling=min-zoom&content-scaling=fixed&page-id=550%3A845",
+    },
+
+    
 ]
 
 
@@ -72,21 +109,38 @@ export const ProjectsSection = () => {
                                  
                                  <div className="flex justify-betweenn items-center">
                                      <div className="flex space-x-3">
-                                         <a
-                                         href={project.demoUrl} 
-                                         target="_blank"
-                                         className="text-foreground/80 hover:text-primary transition-colors duration-300  ">
-                                            <ExternalLink size={20}/>
-                                         </a>
+                                         {project.demoUrl && (
+                                             <a
+                                                 href={project.demoUrl}
+                                                 target="_blank"
+                                                 rel="noreferrer"
+                                                 className="text-foreground/80 hover:text-primary transition-colors duration-300  ">
+                                                 <ExternalLink size={20}/>
+                                             </a>
+                                         )}
 
-                                         <a 
-                                         href={project.githubUrl} 
-                                           target="_blank"
-                                         className="text-foreground/80 hover:text-primary transition-colors duration-300  ">
-                                            <Github size={20}/>
-                                         </a>
+                                         {project.figmaUrl && (
+                                             <a
+                                                 href={project.figmaUrl}
+                                                 target="_blank"
+                                                 rel="noreferrer"
+                                                 aria-label="Figma"
+                                                 className="text-foreground/80 hover:text-primary transition-colors duration-300  ">
+                                                 <LuFigma size={20}/>
+                                             </a>
+                                         )}
+
+                                         {project.githubUrl && (
+                                             <a
+                                                 href={project.githubUrl}
+                                                 target="_blank"
+                                                 rel="noreferrer"
+                                                 className="text-foreground/80 hover:text-primary transition-colors duration-300  ">
+                                                 <Github size={20}/>
+                                             </a>
+                                         )}
                                      </div>
-                                     </div>
+                                 </div>
                                  </div>
                         </div>
                     ))}

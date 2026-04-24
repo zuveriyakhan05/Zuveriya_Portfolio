@@ -24,6 +24,9 @@ const skills = [
      {name: "C++", level:85, category: "programming languages"},
      {name: "JavaScript", level:90, category: "programming languages"},
      {name: "TypeScript", level:70, category: "programming languages"},
+     {name: "Java", level:60, category: "programming languages"},
+     {name: "Python", level:85, category: "programming languages"},
+
 
      //Tools
      {name: "Git/GitHub", level:90, category: "tools"},
@@ -31,6 +34,12 @@ const skills = [
      {name: "CorelDraw", level:90, category: "tools"},
      {name: "Photoshop", level:85, category: "tools"},
      {name: "Pagemaker", level:85, category: "tools"},
+     {name: "Google Collab", level:90, category: "tools"},
+     {name: "Google Sheets", level:90, category: "tools"},
+     {name: "Excel", level:90, category: "tools"},
+     {name: "Power BI", level:90, category: "tools"},
+     {name: "Tablue", level:80, category: "tools"},
+    
     
 ];
 

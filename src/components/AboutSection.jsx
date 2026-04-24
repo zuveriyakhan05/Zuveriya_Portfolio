@@ -14,9 +14,9 @@ export const AboutSection = () => {
                     <div className="space-y-6">
                         <div className="space-y-6 flex flex-col items-center">
                             <img
-                                src="/projects/Image.jpg"
+                                src="/projects/Image.png"
                                 alt="Zubi"
-                                className="w-50 h-70 rounded-full object-cover border-4 border-primary shadow-lg mb-4"
+                                className="w-50 h-50 rounded-full object-cover border-4 border-primary shadow-lg mb-4"
                             />
 
                         </div>
@@ -35,7 +35,7 @@ export const AboutSection = () => {
                             problem-solving mindset to every project.
                             Fueled by curiosity 🔍 and driven by impact 🌟, I turn bold ideas into real-world digital solutions.
 
-                            <br />Let’s build something extraordinary together 💡✨
+                            <br />Let’s build something extraordinary together 💡✨
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -43,7 +43,7 @@ export const AboutSection = () => {
                                 Get In Touch
                             </a>
 
-                            <a href="/Pathan Zuveriya.pdf" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
+                            <a href="/Zuveriya Pathan.pdf" download className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
                                 Download CV
                             </a>
 
@@ -64,7 +64,7 @@ export const AboutSection = () => {
                                     <p className="text-muted-foreground">
                                         🔍 I thrive on turning real-world challenges into smart, scalable digital solutions.
                                         Whether it's streamlining user journeys or optimizing backend logic,
-                                        I bring clarity to complexity ⚙✨.
+                                        I bring clarity to complexity ⚙✨.
                                     </p>
                                 </div>
                             </div>
@@ -79,9 +79,9 @@ export const AboutSection = () => {
 
                                     <p className="text-muted-foreground">
                                         I bring ideas to life 💡 by building seamless web experiences from front
-                                        to back — pixel-perfect on the surface 🎨,powerful under the hood 🛠.
+                                        to back — pixel-perfect on the surface 🎨, powerful under the hood 🛠.
                                         As a full-stack developer 🧑‍💻, I craft scalable ⚙, high-performance
-                                        solutions that don’t just work — they wow ✨.
+                                        solutions that don’t just work — they wow ✨.
                                     </p>
                                 </div>
                             </div>
@@ -97,7 +97,7 @@ export const AboutSection = () => {
                                     <p className="text-muted-foreground">
                                         As a UI/UX Designer 🎨, I create intuitive, user-centered designs that blend
                                         aesthetics with functionality 🌟. From wireframes to final interfaces 🖌,
-                                        I craft digital experiences that feel as good as they look ✨.
+                                        I craft digital experiences that feel as good as they look ✨.
                                     </p>
                                 </div>
                             </div>
