@@ -42,6 +42,15 @@ const projects = [
 
     {
      id: 5,
+     title: "Animated India Travel Landing UI",
+     description: "An animated travel website UI designed in Figma, showcasing scenic destinations with smooth transitions, immersive visuals, and a clean navigation experience.",
+     image: "/projects/Travel.png",
+     tags: ["Figma"],
+     figmaUrl: "https://www.figma.com/proto/TLwuAbBQYWLs0pRVhUFRUX/App-Designing?node-id=573-4&viewport=40%2C287%2C0.19&t=bbn5URPvDOAVoSt1-1&scaling=scale-down&content-scaling=fixed&page-id=573%3A3",
+    },
+
+    {
+     id: 6,
      title: "Business Analytics (sales/performance) Dashboard",
      description: "A modern, data-driven analytics dashboard UI designed in Figma, featuring clean visuals, KPI cards, and interactive charts for tracking business performance and insights.",
      image: "/projects/Sales.png",
@@ -50,7 +59,7 @@ const projects = [
     },
 
     {
-     id: 6,
+     id: 7,
      title: "Modern Admin Analytics Dashboard",
      description: "A clean and interactive admin dashboard UI designed in Figma, visualizing key metrics like users, server activity, and financial insights with intuitive charts and controls.",
      image: "/projects/Dataviz ui.png",
@@ -59,7 +68,7 @@ const projects = [
     },
 
     {
-     id: 7,
+     id: 8,
      title: "StayHub Interface",
      description: "A streamlined property management suite designed to balance real-time booking analytics with effortless staff scheduling.",
      image: "/projects/StayHub.png",
