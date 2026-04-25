@@ -76,6 +76,26 @@ const projects = [
      figmaUrl: "https://www.figma.com/proto/TLwuAbBQYWLs0pRVhUFRUX/App-Designing?node-id=550-1466&viewport=-515%2C-289%2C0.27&t=4rkaAvTS4VXgbiSJ-1&scaling=min-zoom&content-scaling=fixed&page-id=550%3A845",
     },
 
+    {
+     id: 9,
+     title: "Pretty lady Landing Page",
+     description: "A modern cosmetics landing page UI designed in Figma, featuring elegant visuals, soft color tones, and a clean layout to highlight beauty products and offers.",
+     image: "/projects/pretty.png",
+     tags: ["Figma"],
+     figmaUrl: "https://www.figma.com/proto/TLwuAbBQYWLs0pRVhUFRUX/App-Designing?node-id=580-75&p=f&viewport=177%2C40%2C0.12&t=X4314Bm0wQeUkAeJ-1&scaling=scale-down&content-scaling=fixed&page-id=580%3A74",
+    },
+
+    {
+     id: 10,
+     title: "E-Commerce Mobile UI",
+     description: "A stylish E-commerce mobile UI designed in Figma, showcasing fashion products with a clean layout, bold visuals, and an intuitive shopping experience.",
+     image: "/projects/E-commerce.png",
+     tags: ["Figma"],
+     figmaUrl: "https://www.figma.com/proto/TLwuAbBQYWLs0pRVhUFRUX/App-Designing?page-id=0%3A1&node-id=1-2&viewport=361%2C246%2C0.05&t=Vu5c914EIQ1nNwUE-1&scaling=scale-down&content-scaling=fixed",
+    },
+
+    
+
     
 ]
 
