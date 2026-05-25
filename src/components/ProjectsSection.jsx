@@ -40,8 +40,17 @@ const projects = [
      githubUrl: "https://github.com/zuveriyakhan05/Sales_Store_Dashboard.git",
     },
 
-    {
+     {
      id: 5,
+     title: "Netflix Data Insights Dashboard",
+     description: "A Netflix Content Analytics Dashboard built in Power BI that visualizes movies vs TV shows distribution, content trends over time, ratings, country-wise availability, and genre analysis using a modern Netflix-style dark theme with red accents.",
+     image: "/projects/Netflix.png",
+     tags: ["Power BI"],
+     githubUrl: "https://github.com/zuveriyakhan05/Netflix-Dashboard.git",
+    },
+
+    {
+     id: 6,
      title: "Animated India Travel Landing UI",
      description: "An animated travel website UI designed in Figma, showcasing scenic destinations with smooth transitions, immersive visuals, and a clean navigation experience.",
      image: "/projects/Travel.png",
@@ -50,7 +59,7 @@ const projects = [
     },
 
     {
-     id: 6,
+     id: 7,
      title: "Business Analytics (sales/performance) Dashboard",
      description: "A modern, data-driven analytics dashboard UI designed in Figma, featuring clean visuals, KPI cards, and interactive charts for tracking business performance and insights.",
      image: "/projects/Sales.png",
@@ -59,7 +68,7 @@ const projects = [
     },
 
     {
-     id: 7,
+     id: 8,
      title: "Modern Admin Analytics Dashboard",
      description: "A clean and interactive admin dashboard UI designed in Figma, visualizing key metrics like users, server activity, and financial insights with intuitive charts and controls.",
      image: "/projects/Dataviz ui.png",
@@ -68,7 +77,7 @@ const projects = [
     },
 
     {
-     id: 8,
+     id: 9,
      title: "StayHub Interface",
      description: "A streamlined property management suite designed to balance real-time booking analytics with effortless staff scheduling.",
      image: "/projects/StayHub.png",
@@ -77,7 +86,7 @@ const projects = [
     },
 
     {
-     id: 9,
+     id: 10,
      title: "Pretty lady Landing Page",
      description: "A modern cosmetics landing page UI designed in Figma, featuring elegant visuals, soft color tones, and a clean layout to highlight beauty products and offers.",
      image: "/projects/pretty.png",
@@ -86,7 +95,7 @@ const projects = [
     },
 
     {
-     id: 10,
+     id: 11,
      title: "E-Commerce Mobile UI",
      description: "A stylish E-commerce mobile UI designed in Figma, showcasing fashion products with a clean layout, bold visuals, and an intuitive shopping experience.",
      image: "/projects/E-commerce.png",
