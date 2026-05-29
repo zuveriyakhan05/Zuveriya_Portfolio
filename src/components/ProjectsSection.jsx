@@ -18,7 +18,7 @@ const projects = [
      title: "Weather Dashboard",
      description: "An interactive Power BI dashboard that analyzes historical weather data, uncovering trends and correlations between temperature, humidity, wind speed, and visibility using Power Query and DAX.",
      image: "/projects/Weather.png",
-     tags: ["Power BI"],
+     tags: ["Power BI", "Microsoft Excel"],
      githubUrl: "https://github.com/zuveriyakhan05/Weather_Dashboard.git",
     },
 
@@ -45,12 +45,21 @@ const projects = [
      title: "Netflix Data Insights Dashboard",
      description: "A Netflix Content Analytics Dashboard built in Power BI that visualizes movies vs TV shows distribution, content trends over time, ratings, country-wise availability, and genre analysis using a modern Netflix-style dark theme with red accents.",
      image: "/projects/Netflix.png",
-     tags: ["Power BI"],
+     tags: ["Power BI", "Microsoft Excel"],
      githubUrl: "https://github.com/zuveriyakhan05/Netflix-Dashboard.git",
     },
 
-    {
+     {
      id: 6,
+     title: "Google Playstore Dashboard",
+     description: "Built an interactive Microsoft Power BI dashboard using Google Play Store data to analyze app ratings, installs, and categories.Performed data cleaning and visualization using Excel and Power BI.",
+     image: "/projects/Playstore.png",
+     tags: ["Power BI", "Microsoft Excel"],
+     githubUrl: "https://github.com/zuveriyakhan05/Google_Playstore_Dashboard",
+    },
+
+    {
+     id: 7,
      title: "Animated India Travel Landing UI",
      description: "An animated travel website UI designed in Figma, showcasing scenic destinations with smooth transitions, immersive visuals, and a clean navigation experience.",
      image: "/projects/Travel.png",
@@ -59,7 +68,7 @@ const projects = [
     },
 
     {
-     id: 7,
+     id: 8,
      title: "Business Analytics (sales/performance) Dashboard",
      description: "A modern, data-driven analytics dashboard UI designed in Figma, featuring clean visuals, KPI cards, and interactive charts for tracking business performance and insights.",
      image: "/projects/Sales.png",
@@ -68,7 +77,7 @@ const projects = [
     },
 
     {
-     id: 8,
+     id: 9,
      title: "Modern Admin Analytics Dashboard",
      description: "A clean and interactive admin dashboard UI designed in Figma, visualizing key metrics like users, server activity, and financial insights with intuitive charts and controls.",
      image: "/projects/Dataviz ui.png",
@@ -77,7 +86,7 @@ const projects = [
     },
 
     {
-     id: 9,
+     id: 10,
      title: "StayHub Interface",
      description: "A streamlined property management suite designed to balance real-time booking analytics with effortless staff scheduling.",
      image: "/projects/StayHub.png",
@@ -86,7 +95,7 @@ const projects = [
     },
 
     {
-     id: 10,
+     id: 11,
      title: "Pretty lady Landing Page",
      description: "A modern cosmetics landing page UI designed in Figma, featuring elegant visuals, soft color tones, and a clean layout to highlight beauty products and offers.",
      image: "/projects/pretty.png",
@@ -95,7 +104,7 @@ const projects = [
     },
 
     {
-     id: 11,
+     id: 12,
      title: "E-Commerce Mobile UI",
      description: "A stylish E-commerce mobile UI designed in Figma, showcasing fashion products with a clean layout, bold visuals, and an intuitive shopping experience.",
      image: "/projects/E-commerce.png",
