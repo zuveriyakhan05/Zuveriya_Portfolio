@@ -116,7 +116,7 @@ export const ContactSection = () => {
                   name="name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                  placeholder="Zuveriya Khan"
+                  placeholder="Enter Your Name"
                 />
               </div>
               <div>
