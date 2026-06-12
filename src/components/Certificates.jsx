@@ -23,13 +23,13 @@ const certificates = [
   {
     title: "Introduction to C++",
     issuer: "Sololearn",
-    category: "programming",
+    category: "course",
     file: "/public/Introduction to C++.pdf",
   },
   {
     title: "Basics of Data Structures and Algorithms",
     issuer: "Simplilearn",
-    category: "programming",
+    category: "course",
     file: "/public/Basics of DSA.pdf",
   },
   {
@@ -41,7 +41,7 @@ const certificates = [
   {
     title: "Data Analysis with Python",
     issuer: "freeCodeCamp",
-    category: "programming",
+    category: "course",
     file: "/public/DA with Python.pdf",
   },
   {
@@ -71,19 +71,19 @@ const certificates = [
   {
     title: "Python 101 for Data Science",
     issuer: "IBM",
-    category: "programming",
+    category: "course",
     file: "/public/Split_20260424_1047.pdf",
   },
   {
     title: "Data Visualization with Python",
     issuer: "IBM",
-    category: "programming",
+    category: "course",
     file: "/public/DV with python.pdf",
   },
   {
     title: "Data Analysis with Python",
     issuer: "IBM",
-    category: "programming",
+    category: "course",
     file: "/public/Data Analysis with python.pdf",
   },
   {
@@ -98,9 +98,28 @@ const certificates = [
     category: "internship",
     file: "/public/CodeAlpha.pdf",
   },
+  {
+    title: "Elite Her",
+    issuer: "Elite Her Hackathon",
+    category: "hackathon",
+    file: "/public/Elite her.pdf",
+  },
+  {
+    title: "Data Analytics Using Python and SQL",
+    issuer: "ADS Foundation",
+    category: "course",
+    file: "/public/ADS.pdf",
+  },
+  {
+    title: "Data Analytics Internship",
+    issuer: "Decode Labs",
+    category: "internship",
+    file: "/public/Decode labs.pdf",
+  },
+  
 ];
 
-const categories = ["all", "hackathon", "internship", "programming", "workshop"];
+const categories = ["all", "hackathon", "internship", "course", "workshop"];
 
 export const Certificates = () => {
   const [activeCategory, setActiveCategory] = useState("all");
