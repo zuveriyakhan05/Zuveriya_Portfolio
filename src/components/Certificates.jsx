@@ -116,6 +116,12 @@ const certificates = [
     category: "internship",
     file: "/public/Decode labs.pdf",
   },
+  {
+    title: "Data Analytics Internship",
+    issuer: "Sysslan IT Solutions",
+    category: "internship",
+    file: "/public/Sysslan.pdf",
+  },
   
 ];
 
