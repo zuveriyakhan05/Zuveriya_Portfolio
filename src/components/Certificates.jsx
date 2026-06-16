@@ -6,121 +6,121 @@ const certificates = [
     title: "kAlzen - A GenAI Product Hackathon",
     issuer: "Unstop",
     category: "hackathon",
-    file: "/public/kAlzen.pdf",
+    file: "/kAlzen.pdf",
   },
   {
     title: "AI - ML Virtual Internship",
     issuer: "Google for Developers",
     category: "internship",
-    file: "/public/AI ML.pdf",
+    file: "/AI ML.pdf",
   },
   {
     title: "UI/UX Design Internship",
     issuer: "ThinkMile",
     category: "internship",
-    file: "/public/Zuveriya.pdf",
+    file: "/Zuveriya.pdf",
   },
   {
     title: "Introduction to C++",
     issuer: "Sololearn",
     category: "course",
-    file: "/public/Introduction to C++.pdf",
+    file: "/Introduction to C++.pdf",
   },
   {
     title: "Basics of Data Structures and Algorithms",
     issuer: "Simplilearn",
     category: "course",
-    file: "/public/Basics of DSA.pdf",
+    file: "/Basics of DSA.pdf",
   },
   {
     title: "Kick start in tech skills: AI - ML & Cybersecurity",
     issuer: "Ganpat University",
     category: "workshop",
-    file: "/public/Kick start.pdf",
+    file: "/Kick start.pdf",
   },
   {
     title: "Data Analysis with Python",
     issuer: "freeCodeCamp",
     category: "course",
-    file: "/public/DA with Python.pdf",
+    file: "/DA with Python.pdf",
   },
   {
     title: "Android Developer Virtual Internship",
     issuer: "Google for Developers",
     category: "internship",
-    file: "/public/Android Developer.pdf",
+    file: "/Android Developer.pdf",
   },
   {
     title: "Prajwalan 2k26",
     issuer: "SRKR Engineering College",
     category: "hackathon",
-    file: "/public/Prajwalan.pdf",
+    file: "/Prajwalan.pdf",
   },
   {
     title: "CodeXccelerate",
     issuer: "GATEWAY EDUCATION, Delhi-NCR",
     category: "hackathon",
-    file: "/public/CodeXccelerate.pdf",
+    file: "/CodeXccelerate.pdf",
   },
   {
     title: "Gen - AI Workshop",
     issuer: "Adani Institute of Digital Technology Management",
     category: "workshop",
-    file: "/public/Gen - AI Workshop.pdf",
+    file: "/Gen - AI Workshop.pdf",
   },
   {
     title: "Python 101 for Data Science",
     issuer: "IBM",
     category: "course",
-    file: "/public/Split_20260424_1047.pdf",
+    file: "/Split_20260424_1047.pdf",
   },
   {
     title: "Data Visualization with Python",
     issuer: "IBM",
     category: "course",
-    file: "/public/DV with python.pdf",
+    file: "/DV with python.pdf",
   },
   {
     title: "Data Analysis with Python",
     issuer: "IBM",
     category: "course",
-    file: "/public/Data Analysis with python.pdf",
+    file: "/Data Analysis with python.pdf",
   },
   {
     title: "CodeVersity",
     issuer: "Indian Institute of Technology Gandhinagar",
     category: "hackathon",
-    file: "/public/CodeVersity.pdf",
+    file: "/CodeVersity.pdf",
   },
   {
     title: "CodeAlpha",
     issuer: "CodeAlpha",
     category: "internship",
-    file: "/public/CodeAlpha.pdf",
+    file: "/CodeAlpha.pdf",
   },
   {
     title: "Elite Her",
     issuer: "Elite Her Hackathon",
     category: "hackathon",
-    file: "/public/Elite her.pdf",
+    file: "/Elite her.pdf",
   },
   {
     title: "Data Analytics Using Python and SQL",
     issuer: "ADS Foundation",
     category: "course",
-    file: "/public/ADS.pdf",
+    file: "/ADS.pdf",
   },
   {
     title: "Data Analytics Internship",
     issuer: "Decode Labs",
     category: "internship",
-    file: "/public/Decode labs.pdf",
+    file: "/Decode labs.pdf",
   },
   {
     title: "Data Analytics Internship",
     issuer: "Sysslan IT Solutions",
     category: "internship",
-    file: "/public/Sysslan.pdf",
+    file: "/Sysslan.pdf",
   },
   
 ];
@@ -179,7 +179,7 @@ export const Certificates = () => {
               </p>
 
               <a
-                href={cert.file}
+                href={encodeURI(cert.file)}
                 target="_blank"
                 rel="noreferrer"
                 className="text-primary hover:text-primary/80 transition"
