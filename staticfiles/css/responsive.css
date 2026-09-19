@@ -1,0 +1,73 @@
+
+  .nav-note { display: none; }
+  .about-mark { margin-left: -8px; }
+  .project-row:nth-child(even) .project-image { border-top-width: 7px; }
+  .skill-group-2 { padding-left: 0; }
+  .certificate-item:nth-child(3n) { padding-left: 8px; }
+  .site-footer { grid-template-columns: 1fr; }
+  .footer-seal, .copyright { text-align: left; }
+  .hero h1 { font-size: clamp(48px, 13vw, 76px); }
+  .hero-orbit-one { width: 330px; height: 330px; right: -18px; top: 20px; }
+  .hero-orbit-two { width: 240px; height: 92px; right: 14px; top: 155px; }
+  .hero-sticker { left: 0; top: 0; transform: scale(.82) rotate(-11deg); transform-origin: top left; }
+  .hero-side-label { left: 0; bottom: 95px; }
+  .portrait-frame { right: 12%; width: 72%; box-shadow: 14px 14px 0 var(--rose); }
+  .about-heading h2, .section-heading h2, .contact-heading h2 { font-size: clamp(42px, 11vw, 60px); }
+}
+
+/* Responsive composition pass: fixed gutters prevent compounded side margins. */
+@media (max-width: 900px) and (min-width: 761px) {
+  .about-section { grid-template-columns: .9fr 1.1fr; gap: 7%; }
+  .about-copy { grid-column: 2; padding-top: 25px; }
+  .services-section { grid-template-columns: 1fr 1fr; }
+  .service-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .service-item { min-height: 190px; }
+  .service-item h3 { margin-top: 40px; }
+}
+@media (max-width: 760px) {
+  .section-grid, .site-header { width: calc(100% - 32px); }
+  .hero { overflow: hidden; }
+  .hero { padding: 50px 16px 62px; gap: 18px; }
+  .about-section, .skills-section, .certificates-section, .projects-section, .contact-section, .services-section { padding: 56px 16px 48px; }
+  .section-index { margin-bottom: 32px; }
+  .about-copy { padding-top: 26px; }
+  .about-mark, .about-doodle { margin-left: 0; }
+  .hero-visual { min-height: 350px; }
+  .portrait-frame { width: min(250px, 76%); height: auto; aspect-ratio: .78; right: 11%; }
+  .hero-orbit-one { width: min(310px, 94%); height: min(310px, 94%); right: -6px; }
+  .hero-orbit-two { right: 6%; }
+  .hero-side-label { display: none; }
+  .hero-marquee { left: 16px; right: 16px; }
+  .interest-list { grid-template-columns: 1fr; }
+  .project-info h3 { overflow-wrap: anywhere; }
+  .service-list { gap: 10px; }
+  .service-item { transform: none; }
+  .service-item:nth-child(even) { transform: none; }
+  .certificate-grid { margin-inline: 0; }
+}
+@media (max-width: 360px) {
+  .hero h1 { font-size: 47px; }
+  .hero-actions { align-items: flex-start; flex-direction: column; gap: 17px; }
+  .hero-visual { min-height: 315px; }
+  .portrait-frame { width: 72%; }
+  .certificate-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 760px) {
+  .services-composition { min-height: 154px; margin: 8px 0 4px; }
+  .composition-note { right: 8%; top: 0; width: 176px; padding: 15px; }
+  .composition-note strong { margin: 14px 0 9px; font-size: 27px; }
+  .composition-flower { top: 88px; left: 7%; transform: scale(.8) rotate(-10deg); transform-origin: top left; }
+  .composition-arrow { left: 38%; top: 77px; font-size: 43px; }
+  .composition-sparkle { right: 4%; top: 84px; }
+}
+@media (max-width: 360px) { .services-composition { min-height: 145px; }.composition-note { right: 5%; width: 164px; }.composition-flower { left: 3%; }.composition-arrow { left: 35%; } }
+
+#about > .section-index { left: 10px; }
+@media (max-width: 760px) { #about > .section-index { transform: translateX(6px); } }
+#services > .section-index, #projects > .section-index, #skills > .section-index > .section-index, #certificates > .section-index, #contact > .section-index { left: 10px; }
+@media (max-width: 760px) { #services > .section-index, #projects > .section-index, #skills > .section-index > .section-index, #certificates > .section-index, #contact > .section-index { transform: translateX(6px); } }
+
+.site-footer { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr); gap: 32px; align-items: center; padding: 42px 4% 30px; }
+.footer-brand p { margin: 4px 0 0; }.footer-links { justify-content: center; align-items: center; gap: 26px; margin: 0; }.footer-meta { justify-self: end; text-align: right; }.footer-meta p { margin: 0; }.footer-seal { margin-bottom: 4px !important; }.footer-seal span { margin-left: 5px; }
+@media (max-width: 760px) { .site-footer { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; padding: 38px 16px 26px; }.footer-links { justify-content: flex-start; gap: 18px; flex-wrap: wrap; }.footer-meta { align-self: flex-start; text-align: left; } }
