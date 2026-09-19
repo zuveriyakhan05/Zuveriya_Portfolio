@@ -1,0 +1,6 @@
+<section id="skills" class="skills-section section-grid paper-section">
+  <div class="section-index">04 <span>Skills &amp; tools</span></div>
+  <div class="skills-composition" aria-hidden="true"><div class="skills-paper-note"><small>studio note</small><strong>little tools,<br>big ideas</strong><em>design in progress</em></div><span class="skills-flower"><i></i><i></i><i></i><i></i><b></b></span><span class="skills-sparkle">✦</span><span class="skills-arrow">⌒</span></div>
+  <div class="section-heading skills-heading"><p class="eyebrow">A working vocabulary</p><h2>Tools for<br><em>making sense.</em></h2></div>
+  <div class="skill-groups">{% for group, skills_in_group in skills.items %}<div class="skill-group skill-group-{{ forloop.counter }}"><p class="eyebrow">{{ group }}</p><div class="skill-names">{% for skill in skills_in_group %}<span>{{ skill.name }}</span>{% empty %}<span class="muted">Add skills in admin.</span>{% endfor %}</div></div>{% endfor %}</div>
+</section>

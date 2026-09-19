@@ -1,0 +1,14 @@
+{% load static %}
+<section id="projects" class="projects-section section-grid">
+  <div class="section-index">03 <span>Selected work</span></div>
+  <div class="section-heading projects-heading"><span class="projects-sparkle" aria-hidden="true">✦</span><p class="eyebrow">A small edit of a growing practice</p><h2>Selected<br><em>projects.</em></h2><p class="projects-note">things I've made</p><div class="projects-composition" aria-hidden="true"><div class="projects-paper-note"><small>project notes</small><strong>selected with<br>intention</strong><em>data · design · ideas</em></div><span class="projects-flower"><i></i><i></i><i></i><i></i><b></b></span><span class="projects-arrow">⌒</span><span class="projects-mini-sparkle">✦</span></div></div>
+  <div class="filter-row" data-filters><button class="filter-button is-active" data-filter="all">All work</button>{% for value,label in category_choices %}<button class="filter-button" data-filter="{{ value }}">{{ label }}</button>{% endfor %}</div>
+  <div class="project-list project-card-grid">
+    {% for project in projects %}
+      <article class="project-card reveal" data-category="{{ project.category }}">
+        <div class="project-card-image"><img src="{% static 'images/' %}{{ project.image }}" alt="{{ project.title }}" loading="lazy"><span class="project-card-number">{{ forloop.counter|stringformat:"02d" }}</span></div>
+        <div class="project-card-body"><p class="eyebrow">{{ project.get_category_display }}{% if project.year %} / {{ project.year }}{% endif %}</p><h3>{{ project.title }}</h3><p class="project-card-description">{{ project.description }}</p>{% if project.role %}<p class="project-card-role">Role / {{ project.role }}</p>{% endif %}<p class="project-meta">{{ project.technologies }}</p><div class="project-links">{% if project.github_url %}<a href="{{ project.github_url }}" target="_blank" rel="noreferrer">GitHub ↗</a>{% endif %}{% if project.live_url %}<a href="{{ project.live_url }}" target="_blank" rel="noreferrer">Live project ↗</a>{% endif %}{% if project.figma_url %}<a href="{{ project.figma_url }}" target="_blank" rel="noreferrer">Figma ↗</a>{% endif %}</div></div>
+      </article>
+    {% empty %}<p class="empty-state">Projects will appear here once added through Django admin.</p>{% endfor %}
+  </div>
+</section>
