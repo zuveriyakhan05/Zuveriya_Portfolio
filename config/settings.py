@@ -3,7 +3,11 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "dev-only-change-me"
 DEBUG = True
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "testserver"]
+ALLOWED_HOSTS = [
+    "zuveriya-portfolio.onrender.com",
+    "localhost",
+    "127.0.0.1",
+    ]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
