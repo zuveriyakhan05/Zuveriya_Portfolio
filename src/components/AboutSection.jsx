@@ -1,162 +1,106 @@
-import { Code, User, GraduationCap, BookOpen, BrainCircuit, } from "lucide-react";
-
-
+import React from "react";
+import { SparkleStar } from "./DecorativeFlower";
 
 export const AboutSection = () => {
-    return (
-        <section id="about" className="py-24 px-4 relative">
-            <div className="container mx-auto max-w-5xl">
-                <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                    About <span className="text-primary"> Me </span>
-                </h2>
+  const specialties = [
+    { num: "01", name: "Data Analytics" },
+    { num: "02", name: "Artificial Intelligence" },
+    { num: "03", name: "Machine Learning" },
+    { num: "04", name: "UI/UX Design" },
+    { num: "05", name: "Full-stack Development" },
+    { num: "06", name: "Creative Problem Solving" },
+  ];
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center ">
-                    <div className="space-y-6">
-                        <div className="space-y-6 flex flex-col items-center">
-                            <img
-                                src="/projects/Image.png"
-                                alt="Zubi"
-                                className="w-50 h-50 rounded-full object-cover border-4 border-primary shadow-lg mb-4"
-                            />
+  return (
+    <section id="about" className="py-24 px-6 md:px-12 bg-[#FFFDF9] relative border-t border-[#E5CFC1]/40">
+      <div className="max-w-7xl mx-auto w-full">
+        
+        {/* Section Header Tag */}
+        <div className="flex items-center space-x-3 text-xs font-bold tracking-widest text-[#2D283E]/70 uppercase mb-12">
+          <span className="text-[#E47E64]">01</span>
+          <span>ABOUT ME</span>
+        </div>
 
-                        </div>
+        {/* Content Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          
+          {/* Left Column - Headline */}
+          <div className="lg:col-span-6 space-y-6">
+            <p className="text-[11px] font-bold tracking-widest text-[#2D283E]/60 uppercase">
+              A CURIOUS MIND WITH A VISUAL INSTINCT
+            </p>
 
-                        <h3 className="text-2xl font-semibold">Turning Vision into Virtual Reality</h3>
+            <div className="relative">
+              {/* Sparkle Icon */}
+              <SparkleStar className="absolute -top-4 right-8 w-5 h-5 text-[#E47E64]" />
 
-                        <p className="text-muted-foreground">
-                            I’m a passionate 🎨 UI/UX Designer, Data Analyst 📊 and Full-Stack Developer 🧑‍💻 currently pursuing
-                            a B.Tech in Computer Science Engineering at Rai University 🎓.
-                            I merge intuitive design with powerful development to craft digital experiences
-                            that are both user-friendly and high-performing.
-                        </p>
-
-                        <p className="text-muted-foreground">
-                            Whether sketching seamless interfaces ✏ or building end-to-end web solutions 🔧,I bring creativity, precision, and a
-                            problem-solving mindset to every project.
-                            Fueled by curiosity 🔍 and driven by impact 🌟, I turn bold ideas into real-world digital solutions.
-
-                            <br />Let’s build something extraordinary together 💡✨
-                        </p>
-
-                        <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                            <a href="#contact" className="cosmic-button">
-                                Get In Touch
-                            </a>
-
-                            <a href="/Pathan Zuveriya.pdf" download className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
-                                Download CV
-                            </a>
-
-
-                        </div>
-
-                    </div>
-
-                    <div className="grid grid-cols-1 gap-6">
-                        <div className="gradient-border p-6 card-hover">
-                            <div className="flex items-start gap-4">
-                                <div className="p-3 rounded-full bg-primary/10">
-                                    <BrainCircuit className="h-6 w-6 text-primary" />
-                                </div>
-                                <div className="text-left">
-                                    <h4 className="font-semibold text-lg">Problem Solver</h4>
-
-                                    <p className="text-muted-foreground">
-                                        🔍 I thrive on turning real-world challenges into smart, scalable digital solutions.
-                                        Whether it's streamlining user journeys or optimizing backend logic,
-                                        I bring clarity to complexity ⚙✨.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="gradient-border p-6 card-hover">
-                            <div className="flex items-start gap-4">
-                                <div className="p-3 rounded-full bg-primary/10">
-                                    <Code className="h-6 w-6 text-primary" />
-                                </div>
-                                <div className="text-left">
-                                    <h4 className="font-semibold text-lg">Full-Stack Developer</h4>
-
-                                    <p className="text-muted-foreground">
-                                        I bring ideas to life 💡 by building seamless web experiences from front
-                                        to back — pixel-perfect on the surface 🎨, powerful under the hood 🛠.
-                                        As a full-stack developer 🧑‍💻, I craft scalable ⚙, high-performance
-                                        solutions that don’t just work — they wow ✨.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="gradient-border p-6 card-hover">
-                            <div className="flex items-start gap-4">
-                                <div className="p-3 rounded-full bg-primary/10">
-                                    <User className="h-6 w-6 text-primary" />
-                                </div>
-                                <div className="text-left">
-                                    <h4 className="font-semibold text-lg">UI/UX Designer</h4>
-
-                                    <p className="text-muted-foreground">
-                                        As a UI/UX Designer 🎨, I create intuitive, user-centered designs that blend
-                                        aesthetics with functionality 🌟. From wireframes to final interfaces 🖌,
-                                        I craft digital experiences that feel as good as they look ✨.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="gradient-border p-6 card-hover">
-                            <div className="flex items-start gap-4">
-                                <div className="p-3 rounded-full bg-primary/10">
-                                    <GraduationCap className="h-6 w-6 text-primary" />
-                                </div>
-                                <div className="text-left">
-                                    <h4 className="font-semibold text-lg">Education</h4>
-
-                                    <p className="text-muted-foreground">
-                                        🎓 Currently pursuing a B.Tech in Computer Science Engineering at Rai University,
-                                        with a strong focus on software development and problem-solving.
-                                        📚 Continuously expanding my skills through hands-on projects, certifications,
-                                        and real-world learning experiences.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="gradient-border p-6 card-hover">
-                            <div className="flex items-start gap-4">
-                                <div className="p-3 rounded-full bg-primary/10">
-                                    <BookOpen className="h-6 w-6 text-primary" />
-                                </div>
-                                <div className="text-left">
-                                    <h4 className="font-semibold text-lg">Continuous Learner</h4>
-
-                                    <p className="text-muted-foreground">
-                                        📚 Passionate about lifelong learning, I consistently upgrade my skills
-                                        through courses, bootcamps, and hands-on projects.
-                                        Curiosity is my superpower 🔥.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        {/* <div className="gradient-border p-6 card-hover">
-                            <div className="flex items-start gap-4">
-                                <div className="p-3 rounded-full bg-primary/10">
-                                    <Handshake
-                                     className="h-6 w-6 text-primary" />
-                                </div>
-                                <div className="text-left">
-                                   <h4 className="font-semibold text-lg">Seamless Collaboration</h4>
-
-                                   <p className="text-muted-foreground">
-                                    I believe collaboration is a true superpower 💥 blending empathy, curiosity,
-                                    and clear communication to build people-first digital experiences 🌐.
-                                    From brainstorming ideas 💡 to reviewing code 🔍,  I bring energy and focus
-                                    to every team I’m part of 🚀.
-
-                                    </p>
-                                </div>
-                            </div>
-                        </div> */}
-                    </div>
-                </div>
+              <h2 className="font-serif uppercase tracking-tight leading-[0.92] text-[#2D283E]">
+                <span className="block text-5xl sm:text-6xl md:text-7xl font-normal">
+                  WHERE
+                </span>
+                <span className="block text-5xl sm:text-6xl md:text-7xl font-normal">
+                  INSIGHT
+                </span>
+                <span className="block text-5xl sm:text-6xl md:text-7xl font-normal">
+                  MEETS
+                </span>
+                <span className="block text-5xl sm:text-6xl md:text-7xl font-normal italic text-[#E47E64]">
+                  INTENTION.
+                </span>
+              </h2>
             </div>
-        </section>
-    )
-}
+
+            {/* Script Subquote */}
+            <p className="font-script text-2xl text-[#E47E64] pt-2">
+              Data is a material. Design is a way of seeing.
+            </p>
+
+            {/* Little Colored Circles Decoration */}
+            <div className="flex items-center space-x-2 pt-4">
+              <span className="w-2.5 h-2.5 rounded-full border border-[#2D283E] bg-[#BDB2FF]"></span>
+              <span className="w-2.5 h-2.5 rounded-full border border-[#2D283E] bg-[#F8C0AD]"></span>
+              <span className="w-2.5 h-2.5 rounded-full border border-[#2D283E] bg-[#F4978E]"></span>
+            </div>
+          </div>
+
+          {/* Right Column - Details & List */}
+          <div className="lg:col-span-6 space-y-8 lg:pt-8">
+            {/* Cursive Subhead */}
+            <h3 className="font-script text-3xl md:text-4xl text-[#E47E64] font-normal">
+              curious by nature
+            </h3>
+
+            {/* Paragraph */}
+            <p className="text-[#2D283E]/80 text-base leading-relaxed">
+              I am Zuveriya Khan, a Data Analyst and aspiring AI professional with experience in UI/UX and graphic design. I enjoy transforming raw data into meaningful insights, creating intuitive digital experiences, and building intelligent digital solutions.
+            </p>
+
+            {/* 2-Column Grid with Horizontal Dividers */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 border-t border-[#E5CFC1]">
+              {specialties.map((item, index) => (
+                <div
+                  key={index}
+                  className="py-3 border-b border-[#E5CFC1] flex items-center space-x-2 text-xs font-medium text-[#2D283E]"
+                >
+                  <span className="text-[#2D283E]/60">{item.num} /</span>
+                  <span>{item.name}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* Action Link */}
+            <div className="pt-4">
+              <a
+                href="#contact"
+                className="btn-outline-navy uppercase text-xs tracking-wider"
+              >
+                Start A Conversation <span className="text-sm">↘</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+};

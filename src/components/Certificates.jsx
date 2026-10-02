@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { cn } from "../lib/utils";
+import { SparkleStar } from "./DecorativeFlower";
 
 const certificates = [
   {
@@ -93,13 +94,13 @@ const certificates = [
     file: "/CodeVersity.pdf",
   },
   {
-    title: "CodeAlpha",
+    title: "CodeAlpha Internship",
     issuer: "CodeAlpha",
     category: "internship",
     file: "/CodeAlpha.pdf",
   },
   {
-    title: "Elite Her",
+    title: "Elite Her Hackathon",
     issuer: "Elite Her Hackathon",
     category: "hackathon",
     file: "/Elite her.pdf",
@@ -122,10 +123,15 @@ const certificates = [
     category: "internship",
     file: "/Sysslan.pdf",
   },
-  
+  {
+    title: "Review of Research Paper on Cloud & Edge Computing",
+    issuer: "Sysslan IT Solutions",
+    category: "research",
+    file: "/research paper certificate.pdf",
+  }
 ];
 
-const categories = ["all", "hackathon", "internship", "course", "workshop"];
+const categories = ["all", "hackathon", "internship", "course", "workshop", "research"];
 
 export const Certificates = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -134,27 +140,88 @@ export const Certificates = () => {
   );
 
   return (
-    <section id="certificates" className="py-24 px-4 relative">
-      <div className="container mx-auto max-w-5xl">
-        {/* Heading */}
-      
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          {/* <span className="!text-black dark:!text-white">My</span>{" "} */}
-        My <span className="text-primary">Certificates</span>
-        </h2>
+    <section id="certificates" className="py-24 px-6 md:px-12 bg-[#FFFDF9] text-[#2D283E] relative border-t border-[#E5CFC1]/40">
+      <div className="max-w-7xl mx-auto w-full">
+        
+        {/* Tag */}
+        <div className="flex items-center space-x-3 text-xs font-bold tracking-widest text-[#2D283E]/70 uppercase mb-8">
+          <span className="text-[#E47E64]">05</span>
+          <span>CERTIFICATES & ACHIEVEMENTS</span>
+        </div>
 
+        {/* Heading */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-12">
+
+          {/* Left — headline */}
+          <div className="lg:col-span-6 space-y-4">
+            <p className="text-[11px] font-bold tracking-widest text-[#2D283E]/60 uppercase">
+              CONTINUOUS LEARNING & CREDENTIALS
+            </p>
+            <div className="relative inline-block">
+              <h2 className="font-serif uppercase tracking-tight leading-[0.92] text-[#2D283E]">
+                <span className="block text-5xl sm:text-6xl md:text-7xl font-normal">
+                  MY
+                </span>
+                <span className="block text-5xl sm:text-6xl md:text-7xl font-normal italic text-[#E47E64]">
+                  CERTIFICATIONS.
+                </span>
+              </h2>
+              <SparkleStar className="absolute -top-3 -right-6 w-5 h-5 text-[#E47E64]" />
+            </div>
+          </div>
+
+          {/* Right — cute sticker cluster */}
+          <div className="hidden lg:flex lg:col-span-6 items-center justify-center gap-8 relative h-40">
+
+            {/* Sticker 1 — keep learning tag */}
+            <div className="transform -rotate-6 sticky-note px-4 py-3 rounded-lg flex flex-col items-center gap-1 w-32">
+              <span className="text-2xl">📚</span>
+              <span className="font-script text-sm text-[#E47E64]">keep learning</span>
+            </div>
+
+            {/* Sticker 2 — star burst doodle */}
+            <div className="flex flex-col items-center gap-2">
+              <svg viewBox="0 0 80 80" fill="none" className="w-16 h-16" xmlns="http://www.w3.org/2000/svg">
+                {[0,45,90,135,180,225,270,315].map((deg, i) => (
+                  <line
+                    key={i}
+                    x1="40" y1="40"
+                    x2={40 + 28 * Math.cos((deg * Math.PI) / 180)}
+                    y2={40 + 28 * Math.sin((deg * Math.PI) / 180)}
+                    stroke="#E47E64" strokeWidth="2" strokeLinecap="round" opacity="0.5"
+                  />
+                ))}
+                <circle cx="40" cy="40" r="8" fill="#E47E64" opacity="0.2" />
+                <circle cx="40" cy="40" r="4" fill="#E47E64" opacity="0.6" />
+              </svg>
+              <span className="font-script text-xs text-[#2D283E]/40">certified ✦</span>
+            </div>
+
+            {/* Sticker 3 — achievement badge */}
+            <div className="transform rotate-4 sticky-note px-4 py-3 rounded-lg flex flex-col items-center gap-1 w-32">
+              <span className="text-2xl">🏅</span>
+              <span className="font-script text-sm text-[#E47E64]">achievement</span>
+            </div>
+
+            {/* Floating sparkles */}
+            <SparkleStar className="absolute top-2 left-1/2 w-3 h-3 text-[#E47E64]/40" />
+            <SparkleStar className="absolute bottom-2 left-[40%] w-4 h-4 text-[#2D283E]/20" />
+
+          </div>
+
+        </div>
 
         {/* Category Buttons */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap items-center gap-3 mb-12">
           {categories.map((category, key) => (
             <button
               key={key}
               onClick={() => setActiveCategory(category)}
               className={cn(
-                "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
+                "px-5 py-2 rounded-full text-xs font-semibold tracking-wider transition-colors duration-200 capitalize border",
                 activeCategory === category
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-secondary/70 text-foreground hover:bg-secondary"
+                  ? "bg-[#E47E64] text-white border-[#E47E64]"
+                  : "bg-[#FFFBF5] text-[#2D283E] border-[#2D283E]/20 hover:border-[#E47E64]"
               )}
             >
               {category}
@@ -163,32 +230,36 @@ export const Certificates = () => {
         </div>
 
         {/* Grid */}
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredCerts.map((cert, index) => (
             <div
               key={index}
-              className="bg-card p-6 rounded-lg shadow-xs card-hover"
+              className="sticky-note p-6 rounded-xs flex flex-col justify-between"
             >
-              <h3 className="text-lg font-semibold mb-2">
-                {cert.title}
-              </h3>
-
-              <p className="text-muted-foreground mb-1">{cert.issuer}</p>
-              <p className="text-sm text-muted-foreground mb-4 capitalize">
-                {cert.category}
-              </p>
+              <div>
+                <span className="text-[10px] font-bold tracking-widest text-[#E47E64] uppercase block mb-2">
+                  {cert.category}
+                </span>
+                <h3 className="font-serif text-xl text-[#2D283E] font-normal mb-2 leading-snug">
+                  {cert.title}
+                </h3>
+                <p className="text-xs text-[#2D283E]/70 mb-4 font-sans">
+                  {cert.issuer}
+                </p>
+              </div>
 
               <a
                 href={encodeURI(cert.file)}
                 target="_blank"
                 rel="noreferrer"
-                className="text-primary hover:text-primary/80 transition"
+                className="btn-outline-navy text-xs uppercase tracking-wider w-fit"
               >
-                View Certificate →
+                View Certificate <span className="text-sm">↘</span>
               </a>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

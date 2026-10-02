@@ -1,94 +1,110 @@
-import { useState } from "react";
-import { cn } from  "../lib/utils";
+import React from "react";
+import { DecorativeFlower, SparkleStar } from "./DecorativeFlower";
 
+export const SkillsSection = () => {
+  return (
+    <section id="skills" className="py-24 px-6 md:px-12 bg-[#FFFDF9] text-[#2D283E] relative border-t border-[#E5CFC1]/40">
+      <div className="max-w-7xl mx-auto w-full">
+        
+        {/* Section Header Tag */}
+        <div className="flex items-center space-x-3 text-xs font-bold tracking-widest text-[#2D283E]/70 uppercase mb-12">
+          <span className="text-[#E47E64]">04</span>
+          <span>SKILLS & TOOLS</span>
+        </div>
 
-
-const skills = [
-    //Frontend
-    {name: "HTML", level:95, category: "frontend"},
-    {name: "CSS", level:80, category: "frontend"},
-    {name: "React", level:85, category: "frontend"},
-    {name: "Tailwind CSS", level:85, category: "frontend"},
-
-    //Backend
-    {name: "Node.js", level:90, category: "backend"},
-    {name: "Express.js", level:70, category: "backend"},
-    {name: "RESTful APIs", level:85, category: "backend"},
-
-    //Databases
-    {name: "MongoDB", level:85, category: "databases"},
-    {name: "Redis", level:60, category: "databases"},
-
-    //Programming Languages
-     {name: "C", level:85, category: "programming languages"},
-     {name: "C++", level:85, category: "programming languages"},
-     {name: "JavaScript", level:90, category: "programming languages"},
-     {name: "TypeScript", level:70, category: "programming languages"},
-     {name: "Java", level:60, category: "programming languages"},
-     {name: "Python", level:85, category: "programming languages"},
-
-
-     //Tools
-     {name: "Git/GitHub", level:90, category: "tools"},
-     {name: "Figma", level:95, category: "tools"},
-     {name: "CorelDraw", level:90, category: "tools"},
-     {name: "Photoshop", level:85, category: "tools"},
-     {name: "Pagemaker", level:85, category: "tools"},
-     {name: "Google Collab", level:90, category: "tools"},
-     {name: "Google Sheets", level:90, category: "tools"},
-     {name: "Excel", level:90, category: "tools"},
-     {name: "Power BI", level:90, category: "tools"},
-     {name: "Tablue", level:80, category: "tools"},
-    
-    
-];
-
-const categories = ["all", "frontend", "backend", "databases", "programming languages", "tools"]
-
-
-
-
-export const SkillsSection = () =>{
-    const [activeCategory, setActiveCategory] = useState("all");
-    const filteredSkills = skills.filter((skill) => activeCategory === "all" || skill.category === activeCategory);
-
-    return (
-        <section id="skills" className="py-24 px-4 relative bg/secondary/30">
-            <div className="container mx-auto max-w-5xl">
-                <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                    My <span className="text-primary">Skills</span>
-                </h2>
-                <div className="flex flex-wrap justify-center gap-4 mb-12">
-                     {categories.map((category, key) => (
-                        <button key={key} 
-                        onClick={() => setActiveCategory(category)}
-                        className={cn(
-                            "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
-                            activeCategory === category ? "bg-primary text-primary-foreground" : "bg-secondary/70 text-foreground hover:bd-secondary"
-                            )}>
-                            {category}
-                        </button>
-                     ))}
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                   {filteredSkills.map((skill, key) => (
-                    <div key={key} className="bg-card p-6 rounded-lg shadow-xs card-hover">
-
-                        <div className="text-left mb-4">
-                            <h3 className="font-semibold text-lg">{skill.name}</h3>
-                        </div>
-                          <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden ">
-                            <div className="bg-primary h-2 rounded-full origin-left animate-grow_1.5s_ease-out"
-                            style={{width: skill.level + "%"}}/>
-                          </div>
-                          <div className="text-right mt-1">
-                            <span className="text-sm text-muted-foreground">{skill.level}%</span>
-                          </div>
-                    </div>
-                   ))}
-                </div>
+        {/* Top Section Row: Left Graphic Notes + Right Main Headline */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+          
+          {/* Left Column - Studio Note & Flower Doodles */}
+          <div className="lg:col-span-5 relative flex flex-col items-start space-y-6">
+            <div className="sticky-note p-6 rounded-xs w-64 transform -rotate-3 shadow-md">
+              <span className="text-[9px] font-bold tracking-widest text-[#2D283E]/60 uppercase block mb-2">
+                STUDIO NOTE
+              </span>
+              <h4 className="font-script text-3xl text-[#2D283E] leading-tight mb-2">
+                little tools, big ideas
+              </h4>
+              <p className="text-xs text-[#E47E64] font-medium italic">
+                design in progress
+              </p>
             </div>
-        </section>
-    )
+
+            {/* Floating Wire Arc and Decorative Flower */}
+            <div className="relative pl-12 flex items-center space-x-6">
+              <svg className="w-16 h-8 text-[#E47E64]" viewBox="0 0 60 30" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M5 25 C 20 5, 40 5, 55 25" strokeLinecap="round" />
+              </svg>
+              <DecorativeFlower className="w-12 h-12" />
+              <SparkleStar className="w-4 h-4 text-[#E47E64]" />
+            </div>
+          </div>
+
+          {/* Right Column - Main Headline */}
+          <div className="lg:col-span-7 space-y-4 lg:text-left">
+            <p className="text-[11px] font-bold tracking-widest text-[#2D283E]/60 uppercase">
+              A WORKING VOCABULARY
+            </p>
+            <h2 className="font-serif uppercase tracking-tight leading-[0.92] text-[#2D283E]">
+              <span className="block text-5xl sm:text-6xl md:text-7xl font-normal">
+                TOOLS FOR
+              </span>
+              <span className="block text-5xl sm:text-6xl md:text-7xl font-normal italic text-[#E47E64]">
+                MAKING
+              </span>
+              <span className="block text-5xl sm:text-6xl md:text-7xl font-normal italic text-[#E47E64]">
+                SENSE.
+              </span>
+            </h2>
+          </div>
+
+        </div>
+
+        {/* 4 Category Skills Grid Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-b border-[#E5CFC1] divide-y md:divide-y-0 md:divide-x divide-[#E5CFC1]">
+          
+          {/* Top Left: Data Analytics */}
+          <div className="p-8 space-y-4">
+            <span className="text-[10px] font-bold tracking-widest text-[#2D283E]/60 uppercase block">
+              DATA ANALYTICS
+            </span>
+            <p className="font-serif text-2xl md:text-3xl text-[#2D283E] leading-relaxed">
+              Python, SQL, Excel, Power BI, Tableau, Google Sheets, Google Colab
+            </p>
+          </div>
+
+          {/* Top Right: Development (Peach Background Highlight Box) */}
+          <div className="p-8 bg-[#F8C0AD]/40 space-y-4">
+            <span className="text-[10px] font-bold tracking-widest text-[#2D283E]/60 uppercase block">
+              DEVELOPMENT
+            </span>
+            <p className="font-serif text-2xl md:text-3xl text-[#2D283E] leading-relaxed">
+              HTML, CSS, JavaScript, React.js, Next.js, Node.js, Express.js, MongoDB, Git, GitHub
+            </p>
+          </div>
+
+          {/* Bottom Left: AI / Machine Learning */}
+          <div className="p-8 space-y-4">
+            <span className="text-[10px] font-bold tracking-widest text-[#2D283E]/60 uppercase block">
+              AI / MACHINE LEARNING
+            </span>
+            <p className="font-serif text-2xl md:text-3xl text-[#E47E64] leading-relaxed">
+              Python, Machine Learning, AI application development, Data analysis
+            </p>
+          </div>
+
+          {/* Bottom Right: Design */}
+          <div className="p-8 space-y-4">
+            <span className="text-[10px] font-bold tracking-widest text-[#2D283E]/60 uppercase block">
+              DESIGN
+            </span>
+            <p className="font-serif text-2xl md:text-3xl text-[#2D283E] leading-relaxed">
+              Figma, UI/UX Design, Graphic Design, Photoshop, CorelDraw
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  );
 };

@@ -1,33 +1,27 @@
+import React from "react";
 import { Navbar } from "../components/Navbar";
-import { ThemeToggle } from "../components/ThemeToggle";
-import { StarBackground } from "../components/StarBackground";
 import { HeroSection } from "../components/HeroSection";
 import { AboutSection } from "../components/AboutSection";
+import { WhatIDoSection } from "../components/WhatIDoSection";
+import { ProjectsSection } from "../components/ProjectsSection";
 import { SkillsSection } from "../components/SkillsSection";
-import { ProjectsSection } from "../components/ProjectsSection"
+import { Certificates } from "../components/Certificates";
 import { ContactSection } from "../components/ContactSection";
 import { Footer } from "../components/Footer";
-import { Certificates } from "../components/Certificates";
 
 export const Home = () => {
   return (
-    <div className="min-h-screen text-foreground overflow-x-hidden">
-      {/* Theme Toggle */}
-      {/* <ThemeToggle /> */}
-
-      {/* Background Effects */}
-      <StarBackground />
-
+    <div className="min-h-screen bg-[#FAECE3] text-[#2D283E] selection:bg-[#E47E64] selection:text-white">
       {/* Navbar */}
       <Navbar />
-      {/* <ThemeToggle /> */}
 
-      {/* Main Content */}
+      {/* Main Content Sections */}
       <main>
         <HeroSection />
         <AboutSection />
-        <SkillsSection />
+        <WhatIDoSection />
         <ProjectsSection />
+        <SkillsSection />
         <Certificates />
         <ContactSection />
       </main>
