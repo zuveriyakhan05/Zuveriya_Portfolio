@@ -85,7 +85,7 @@ export const SkillsSection = () => {
           {/* Bottom Left: AI / Machine Learning */}
           <div className="p-8 space-y-4">
             <span className="text-[10px] font-bold tracking-widest text-[#2D283E]/60 uppercase block">
-              AI / MACHINE LEARNING
+              AI / ML
             </span>
             <p className="font-serif text-2xl md:text-3xl text-[#E47E64] leading-relaxed">
               Python, Machine Learning, AI application development, Data analysis

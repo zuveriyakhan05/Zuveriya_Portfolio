@@ -32,9 +32,11 @@ export const HeroSection = () => {
               <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-normal">
                 CREATIVE
               </span>
-              <span className="flex items-baseline gap-4 my-1 text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
-                <span className="font-normal italic text-[#E47E64]">THINKING</span>
-                <span className="font-normal">MEETS</span>
+              <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-normal italic text-[#E47E64] my-1">
+                THINKING
+              </span>
+              <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-normal">
+                MEETS
               </span>
               <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-normal">
                 INTELLIGENCE.
@@ -93,10 +95,10 @@ export const HeroSection = () => {
       {/* Bottom Ticker Strip */}
       <div className="max-w-7xl mx-auto w-full pt-16 border-t border-[#E5CFC1]/60 mt-12">
         <div className="flex flex-wrap justify-between items-center text-[10px] md:text-xs font-semibold tracking-widest text-[#2D283E]/70 uppercase gap-4">
+          <span>DATA ANALYST</span> 
+          <span>ASPIRING AI PROFESSIONAL</span>
           <span>UI/UX DESIGNER</span>
-          <span>DATA ANALYST</span>
-          <span>FULL-STACK DEVELOPER</span>
-          <span>PRODUCT MANAGER</span>
+          <span>GRAPHIC DESIGNER</span>
         </div>
       </div>
     </section>

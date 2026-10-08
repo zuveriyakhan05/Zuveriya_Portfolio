@@ -140,7 +140,7 @@ const projects = [
   {
     id: 13,
     num: "13",
-    title: "Sentiment Analysis Tool",
+    title: "BhashaFill",
     category: "AI/ML",
     filterCategory: "AI/ML",
     description: "An NLP-based sentiment analysis model to classify text reviews as positive, negative, or neutral using machine learning techniques.",
@@ -150,7 +150,7 @@ const projects = [
   {
     id: 14,
     num: "14",
-    title: "Image Classification Model",
+    title: "MimicToon",
     category: "AI/ML",
     filterCategory: "AI/ML",
     description: "A deep learning CNN model trained to classify images into categories with high accuracy using TensorFlow and Keras.",
@@ -160,7 +160,7 @@ const projects = [
   {
     id: 15,
     num: "15",
-    title: "Predictive Analytics Dashboard",
+    title: "HireIQ",
     category: "AI/ML",
     filterCategory: "AI/ML",
     description: "A machine learning pipeline that forecasts trends from structured datasets and visualizes predictions through an interactive dashboard.",
